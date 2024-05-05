@@ -43,8 +43,8 @@ int main(int argc, char *argv[])
         meanBubble += bubbleDuration;
 
         cout << "Size of vector: " << dim << endl;
-        cout << "Merge sort duration: " << mergeDuration << " microseconds" << endl;
-        cout << "Bubble sort duration: " << bubbleDuration << " microseconds" << endl;
+        cout << "MergeSort duration: " << mergeDuration << " microseconds" << endl;
+        cout << "BubbleSort duration: " << bubbleDuration << " microseconds" << endl;
         cout << endl;
 
     }
@@ -52,8 +52,8 @@ int main(int argc, char *argv[])
     meanMerge = meanMerge/(argc - 1);
     meanBubble = meanBubble/(argc - 1);
 
-    cout << "Average time of Merge sort: " << meanMerge << " microseconds" << endl;
-    cout << "Average time of Bubble sort: " << meanBubble << " microseconds" << endl;
+    cout << "Average time of MergeSort: " << meanMerge << " microseconds" << endl;
+    cout << "Average time of BubbleSort: " << meanBubble << " microseconds" << endl;
 
     // per vettori di dimensioni minori, il metodo Merge ha durata maggiore di Bubble
     // mentre per vettori di dimensioni maggiori al contrario
